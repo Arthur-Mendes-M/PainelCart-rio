@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+}
+
+video {
+  max-width: 100%;
+}
+
+button {
+  border: none;
+  background: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  border-radius: 0.5rem;
+  color: #164863;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+body {
+  background-color: #427D9D;
+}
+
+header.today {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  flex: 0 1 auto;
+  padding: 2rem 1.5rem 0 1.5rem;
+}
+header.today .temperature, header.today .time {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  flex: 1 1 auto;
+}
+header.today .temperature h4, header.today .time h4 {
+  font-size: 1.2rem;
+  color: #FFFFFF;
+}
+header.today .temperature_image {
+  max-width: 40px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  gap: 0;
+  flex-wrap: wrap;
+  flex: 0 1 auto;
+  max-width: 100%;
+}
+main #passwordsPainel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  flex: 10 1 auto;
+  padding: 1.5rem;
+  max-width: 100%;
+}
+main #passwordsPainel #current {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  flex: 0 1 auto;
+  border-radius: 0.8rem;
+  color: #FFFFFF;
+  padding: 2rem;
+  background: #FFFFFF;
+  color: #164863;
+  width: 100%;
+  max-width: 800px;
+  height: 13rem;
+  box-shadow: inset 0 0 20px 5px #DDF2FD;
+}
+@media (max-width: 500px) {
+  main #passwordsPainel #current {
+    height: 10rem;
+  }
+}
+main #passwordsPainel .passwords, main #passwordsPainel .attendants {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  flex: 1 1 auto;
+}
+main #passwordsPainel .passwords .title h2, main #passwordsPainel .attendants .title h2 {
+  font-size: 3rem;
+}
+main #passwordsPainel .passwords .data h1, main #passwordsPainel .attendants .data h1 {
+  font-size: 2.5rem;
+  font-weight: 200;
+}
+@media (max-width: 500px) {
+  main #passwordsPainel .passwords .title h2, main #passwordsPainel .attendants .title h2 {
+    font-size: 1.5rem;
+  }
+  main #passwordsPainel .passwords .data h1, main #passwordsPainel .attendants .data h1 {
+    font-size: 1.5rem;
+    font-weight: 200;
+  }
+}
+main #passwordsPainel .passwords {
+  align-items: flex-start;
+}
+main #passwordsPainel .attendants {
+  flex: 0 1 auto;
+}
+main #passwordsPainel #records {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  flex: 1 1 auto;
+  border-radius: 0.8rem;
+  color: #FFFFFF;
+  padding: 2rem;
+  background-color: #164863;
+  width: 100%;
+  max-width: 800px;
+  min-height: 100%;
+}
+main #passwordsPainel #records .passwords .data, main #passwordsPainel #records .attendants .data {
+  line-height: 3rem;
+}
+main article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+  padding: 1.5rem;
+  max-width: 100%;
+}
+main article .video {
+  overflow: hidden;
+  border-radius: 1rem;
+  height: 350px;
+  max-width: 600px;
+}
+main article .video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main article .news {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  flex: 1 1 auto;
+  width: 100%;
+  height: 100%;
+  max-width: 600px;
+  color: #DDF2FD;
+}
+main article .news h1 {
+  font-size: 1.2rem;
+}
+main article .news .card {
+  display: flex;
+  flex-direction: row;
+  align-items: unset;
+  justify-content: flex-start;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  flex: 0 1 auto;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  color: #DDF2FD;
+  width: 100%;
+  background-color: #164863;
+}
+main article .news .card .image img {
+  height: 100%;
+  width: 200px;
+  flex: 1 1 auto;
+  object-fit: cover;
+}
+main article .news .card .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  flex: 0 1 auto;
+  padding: 1rem;
+}
+main article .news .card .content .title {
+  font-size: 1.2rem;
+}
+main article .news .card .content .description {
+  font-size: 1rem;
+}
+@media (max-width: 1135px) {
+  main article .news .card {
+    flex-direction: column;
+    gap: 0;
+  }
+  main article .news .card .image {
+    width: 100%;
+    max-height: unset;
+  }
+  main article .news .card .image img {
+    width: 100%;
+    height: 150px;
+  }
+  main article .news .card .content {
+    padding: 1rem;
+  }
+}
+
+#buttonControllerContainer {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+#buttonControllerContainer #changeCurrentData {
+  flex: 1 0 auto;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Painel de atendimento - Cartório</title>
+
+    <link rel="shortcut icon" href="assets/images/logo.svg" type="image/x-icon">
+
+    <!-- Google fonts (only inter import) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+
+    <!-- Onw styles -->
+    <link rel="stylesheet" href="styles/css/style.css">
+</head>
+<body>
+    <header class="today">
+        <div class="temperature">
+            <img src="#" alt="temperature" class="temperature_image">
+            <h4 class="temperature_text">xºC</h4>
+        </div>
+
+        <div class="time">
+            <h4 class="today_fullDate">xx/xx/xx</h4>
+            <h4 class="today_fullHour">xx:xx</h4>
+        </div>
+    </header>
+
+    <main>
+        <section id="passwordsPainel">
+            <div id="current">
+                <div class="passwords">
+                    <div class="title">
+                        <h2>Senha</h2>
+                    </div>
+    
+                    <div class="data">
+                        <h1 class="password">x</h1>
+                    </div>
+                </div>
+    
+                <div class="attendants">
+                    <div class="title">
+                        <h2>Guichê</h2>
+                    </div>
+    
+                    <div class="data">
+                        <h1 class="attendant">x</h1>
+                    </div>
+                </div>
+            </div>
+        
+            <div id="records">
+                <div class="passwords">
+                    <div class="title">
+                        <h2>Senha</h2>
+                    </div>
+    
+                    <div class="data"></div>
+                </div>
+    
+                <div class="attendants">
+                    <div class="title">
+                        <h2>Guichê</h2>
+                    </div>
+    
+                    <div class="data"></div>
+                </div>
+            </div>
+        </section>
+
+        <article>
+            <section class="video">
+                    <video autoplay controls loop poster="assets/images/chaves_poster.webp">
+                    <source src="assets/videos/chaves.mp4" type="video/mp4">
+                    Não foi possível carregar o vídeo :/
+                </video>
+            </section>
+    
+            <section class="news">
+                <h1>Notícias</h1>
+                <div class="card">
+                    <div class="image">
+                        <img src="assets/images/chaves_poster.webp" alt="Títilo da notícia">
+                    </div>
+
+                    <div class="content">
+                        <div class="title">
+                            <h2>Título da notícia</h2>
+                        </div>
+
+                        <div class="descrption">
+                            Description
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <div id="buttonControllerContainer">
+        <button type="button" id="changeCurrentData">Chamar a próxima senha</button>
+    </div>
+
+    <!-- Own scripts -->
+    <script src="scripts/main.js" type="module"></script>
+</body>
+</html>

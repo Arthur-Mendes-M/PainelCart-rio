@@ -1,0 +1,9 @@
+@mixin flexbox($fd: row, $a: center, $j: center, $g: 1rem, $fw: nowrap, $f: 0 1 auto) {
+    display: flex;
+    flex-direction: $fd;
+    align-items: $a;
+    justify-content: $j;
+    gap: $g;
+    flex-wrap: $fw;
+    flex: $f;
+}
