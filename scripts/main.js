@@ -1,6 +1,8 @@
 import { generateNewsCards, newsAPIManager } from "./api/news.js";
 import { weatherAPIManager } from "./api/weather.js";
 
+document.querySelector('video').play()
+
 weatherAPIManager().then(data => {
     const {
         currentDate,
